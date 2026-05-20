@@ -9,18 +9,17 @@
             "direccion": "Cl 185 # 26 – 85",
             "password": "admin123",
             "rol": "admin"
-        }
-    ],
-    "contactos": [
+        },
         {
             "id": "1005210784",
-            "nombres": "Manuel Amado",
-            "apellidos": "Vega",
-            "telefono": "3108880230",
+            "nombres": "Manuel Andrés",
+            "apellidos": "Amado Vega",
+            "telefono": "310 8880230",
             "email": "manuamado19@gmail.com",
             "direccion": "Urb. Bucarica bl 12-17 apto 402",
-            "tipo": "profesional",
-            "notas": "N/A"
+            "rol": "admin",
+            "password": "admin123"
         }
-    ]
+    ],
+    "contactos": []
 }

@@ -2,6 +2,7 @@ from modules.core import cargarDatos
 from modules.utils import limpiarPantalla, pausar
 from modules.messages import mostrarTitulo, mostrarError, mostrarExito
 from modules.crud_contactos import menuContactos
+from modules.crud_usuarios import menuUsuarios
 
 def login():
     """
@@ -44,8 +45,7 @@ def menuPrincipal(usuarioActual):
         if opcion == "1":
             menuContactos()
         elif opcion == "2" and usuarioActual["rol"] == "admin":
-            print("\n(En construcción - Fase 5)")
-            pausar()
+            menuUsuarios(usuarioActual)
         elif opcion == "3":
             limpiarPantalla()
             mostrarExito("¡Gracias por usar el Gestor de Contactos ACME!")
