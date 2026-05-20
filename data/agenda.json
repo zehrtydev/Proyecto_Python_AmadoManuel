@@ -1,0 +1,14 @@
+{
+    "usuarios": [
+        {
+            "id": "0000",
+            "nombres": "Admin",
+            "apellidos": "Admin",
+            "telefono": "555 000111",
+            "email": "admin@acmesolutions.com",
+            "direccion": "Cl 185 # 26 – 85",
+            "password": "admin123",
+            "rol": "admin"
+        }
+    ]
+}
