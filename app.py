@@ -1,6 +1,7 @@
 from modules.core import cargarDatos
 from modules.utils import limpiarPantalla, pausar
 from modules.messages import mostrarTitulo, mostrarError, mostrarExito
+from modules.crud_contactos import menuContactos
 
 def login():
     """
@@ -41,8 +42,7 @@ def menuPrincipal(usuarioActual):
         opcion = input("Seleccione una opción: ").strip()
 
         if opcion == "1":
-            print("\n(En construcción - Fase 3)")
-            pausar()
+            menuContactos()
         elif opcion == "2" and usuarioActual["rol"] == "admin":
             print("\n(En construcción - Fase 5)")
             pausar()
