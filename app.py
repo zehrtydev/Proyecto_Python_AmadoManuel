@@ -1,8 +1,8 @@
 from modules.core import cargarDatos
 from modules.utils import limpiarPantalla, pausar
 from modules.messages import mostrarTitulo, mostrarError, mostrarExito
-from modules.crud_contactos import menuContactos
-from modules.crud_usuarios import menuUsuarios
+from modules.crud_contacts import menuContactos
+from modules.crud_users import menuUsuarios
 
 def login():
     """
