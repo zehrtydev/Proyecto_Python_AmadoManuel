@@ -18,4 +18,3 @@ def mostrarExito(mensaje):
     Muestra un mensaje de éxito decorado.
     """
     print(f"\n[ÉXITO] {mensaje}")
-    

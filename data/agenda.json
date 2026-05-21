@@ -8,7 +8,7 @@
             "email": "admin@acmesolutions.com",
             "direccion": "Cl 185 # 26 – 85",
             "password": "admin123",
-            "rol": "admin"
+            "rol": "administrador"
         },
         {
             "id": "1005210784",
@@ -17,7 +17,7 @@
             "telefono": "310 8880230",
             "email": "manuamado19@gmail.com",
             "direccion": "Urb. Bucarica bl 12-17 apto 402",
-            "rol": "admin",
+            "rol": "administrador",
             "password": "admin123"
         }
     ],

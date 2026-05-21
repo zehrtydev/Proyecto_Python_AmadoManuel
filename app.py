@@ -35,7 +35,7 @@ def menuPrincipal(usuarioActual):
         print("1. Gestión de contactos")
         
         # Muestra solo la opción de gestión de usuarios si el usuario actual es un administrador.
-        if usuarioActual["rol"] == "admin":
+        if usuarioActual["rol"] == "administrador":
             print("2. Gestión de usuarios")
         
         print("3. Salir del sistema")
@@ -44,7 +44,7 @@ def menuPrincipal(usuarioActual):
 
         if opcion == "1":
             menuContactos()
-        elif opcion == "2" and usuarioActual["rol"] == "admin":
+        elif opcion == "2" and usuarioActual["rol"] == "administrador":
             menuUsuarios(usuarioActual)
         elif opcion == "3":
             limpiarPantalla()

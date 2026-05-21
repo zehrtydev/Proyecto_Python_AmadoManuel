@@ -14,4 +14,3 @@ def pausar():
     Hace una pausa hasta que el usuario presione Enter.
     """
     input("Presiona Enter para continuar...")
-    

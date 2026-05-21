@@ -34,4 +34,3 @@ def guardarDatos(datos):
             json.dump(datos, archivo, indent=4, ensure_ascii=False)
     except Exception as e:
         print(f"Error al guardar los datos: {e}")
-        
