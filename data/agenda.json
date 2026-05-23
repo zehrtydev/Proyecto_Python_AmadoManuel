@@ -21,5 +21,16 @@
             "password": "admin123"
         }
     ],
-    "contactos": []
+    "contactos": [
+        {
+            "id": "123",
+            "nombres": "123",
+            "apellidos": "123",
+            "telefono": "123",
+            "email": "123",
+            "direccion": "123",
+            "tipo": "123",
+            "notas": "123"
+        }
+    ]
 }

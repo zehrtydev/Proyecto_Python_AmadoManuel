@@ -10,7 +10,7 @@ def crearUsuario(usuarioActual):
     limpiarPantalla()
     mostrarTitulo("Registrar Nuevo Usuario")
 
-    if usuarioActual.get("rol") != "admin":
+    if usuarioActual.get("rol") != "administrador":
         mostrarError("Acceso denegado. Solo los administradores pueden crear usuarios.")
         pausar()
         return
@@ -49,9 +49,9 @@ def crearUsuario(usuarioActual):
             return
 
     direccion = input("Dirección: ").strip() 
-    rol = input("Rol (admin / usuario): ").strip().lower()
+    rol = input("Rol (administrador / usuario): ").strip().lower()
 
-    if rol not in ["admin", "usuario"]:
+    if rol not in ["administrador", "usuario"]:
         print("Rol no reconocido, se asignará 'usuario' por defecto.")
         rol = "usuario"
 
