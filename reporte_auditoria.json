@@ -1,0 +1,21 @@
+{
+    "mensaje_global": "Se encontraron inconsistencias en la auditoría de datos.",
+    "usuarios_con_errores": [],
+    "contactos_con_errores": [
+        {
+            "id": "123",
+            "errores": [
+                "El tipo de contacto '123' no es válido. Valores permitidos: ['personal', 'trabajo'].",
+                "El correo electrónico '123' no tiene un formato válido."
+            ]
+        }
+    ],
+    "resumen": {
+        "total_usuarios": 2,
+        "total_contactos": 1,
+        "usuarios_con_errores": 0,
+        "contactos_con_errores": 1,
+        "usuarios_con_email_duplicado": 0,
+        "contactos_con_id_duplicado": 0
+    }
+}

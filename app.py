@@ -3,6 +3,7 @@ from modules.utils import limpiarPantalla, pausar
 from modules.messages import mostrarTitulo, mostrarError, mostrarExito
 from modules.crud_contacts import menuContactos
 from modules.crud_users import menuUsuarios
+from modules.audit import auditarDatos
 
 def login():
     """
@@ -34,11 +35,13 @@ def menuPrincipal(usuarioActual):
         
         print("1. Gestión de contactos")
         
-        # Muestra solo la opción de gestión de usuarios si el usuario actual es un administrador.
+        # Muestra solo las opciones de gestión si el usuario actual es un administrador.
         if usuarioActual["rol"] == "administrador":
             print("2. Gestión de usuarios")
-        
-        print("3. Salir del sistema")
+            print("3. Auditoría de datos")
+            print("4. Salir del sistema")
+        else:
+            print("2. Salir del sistema")
 
         opcion = input("Seleccione una opción: ").strip()
 
@@ -46,7 +49,9 @@ def menuPrincipal(usuarioActual):
             menuContactos()
         elif opcion == "2" and usuarioActual["rol"] == "administrador":
             menuUsuarios(usuarioActual)
-        elif opcion == "3":
+        elif opcion == "3" and usuarioActual["rol"] == "administrador":
+            auditarDatos()
+        elif (opcion == "2" and usuarioActual["rol"] != "administrador") or (opcion == "4" and usuarioActual["rol"] == "administrador"):
             limpiarPantalla()
             mostrarExito("¡Gracias por usar el Gestor de Contactos ACME!")
             break
